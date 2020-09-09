@@ -1,0 +1,26 @@
+/*Body*/
+
+/*Header*/
+header{
+    color: white;
+    background-color: rgb(59, 27, 110);
+    height: 200px;
+}
+
+/*Main*/
+main .container{
+    display:flex;
+}
+
+main p{
+    text-align: justify;
+}
+
+main .container-left{
+    border: 1px black solid;
+}
+
+/*Footer*/
+footer{
+    text-align:center;
+}

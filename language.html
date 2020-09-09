@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Langues</title>
+</head>
+<body>
+    <header>
+        <!--Navigation du site-->
+        <div class="container">
+
+            <a href="cv.html"><img id="mon-image" src="img/yogi.jpg" class="rounded float-left w-25" style="height: 200px;" onmouseover=passageDeLaSouris(this); onmouseout=departDeLaSouris(this); alt="..."></a>
+            
+
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="cv.html">Curriculum Vitae</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Compétences Techniques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="relationship.html">Compétences relationnelles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="language.html">Langues</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loisirs.html">Loisirs</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container d-flex flex-wrap">
+            <br><h2>English (anglais):</h2><br>
+            <div>
+                <p>Well, they are not lot of thing to say about his. I can speak english and have a conversation, but i think i need some more specific vocabulary about web developpement. I like to speak english when i'm in an other country, I can practice and work on it. </p>
+            </div>
+        </div>       
+    </main>
+
+    <footer>
+        <div class="container">
+            <br>
+            <p>&copy; - (>'.')>Christophe<('.'<) - 2020</p>
+        </div>
+    </footer>
+
+    <!--Code JavaScript au passage de la souris sur l'image-->
+    <script>
+        var image=document.querySelector("img.mon-image");
+
+        //Affecte la nouvelle image lorsque la souris survole l'élément
+        function passageDeLaSouris(element) {
+            element.setAttribute('src', 'img/pink.jpg');
+        }
+        //Affecte l'image de départ lorsque la souris ne survole plus l'élément
+        function departDeLaSouris(element) {
+            element.setAttribute('src', 'img/yogi.jpg');
+        }
+
+        mon-image.addEventListener("mouseover", passageDeLaSouris);
+        mon-image.addEventListener("mouseout", departDeLaSouris);
+    </script>
+</body>
+</html>

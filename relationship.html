@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Relationnel</title>
+</head>
+<body>
+    <header>
+        <!--Navigation du site-->
+        <div class="container">
+
+            <a href="cv.html"><img id="mon-image" src="img/yogi.jpg" class="rounded float-left w-25" style="height: 200px;" onmouseover=passageDeLaSouris(this); onmouseout=departDeLaSouris(this); alt="..."></a>
+            
+
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="cv.html">Curriculum Vitae</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Compétences techniques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="relationship.html">Compétences relationnelles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="language.html">Langues</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loisirs.html">loisirs</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <br><h1 class="text-center">Mes compétences relationnelles:</h1><br>
+        </div>
+        <div class="container">
+            <div class="card" style="width: 18rem;">
+                <img src="img/motive.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Motivé et volontaire</h5>
+                  <p class="card-text text-center">J'ai systématiquement apporté un investissement personnel à tout ce que j'ai entrepris. Je suis une personne motivée et mon projet est bien défini: devenir développeur web</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/chameleon.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Capacité d'adaptation</h5>
+                  <p class="card-text text-center">J'ai principalement travaillé dans le milieu associatif, mais je me suis adapté en observant et de manière autonome, aux différents emplois que j'ai occupé.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/ecoute.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Capacité d'écoute</h5>
+                  <p class="card-text text-center">Lorsque que j'étais éducateurs spécialisés ou même professeur, j'ai toujours était à l'écoute pour les accompagner dans leur vie à un nstant t, ou dans leurs apprentissages pour les plus petits.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/meditation.gif" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Autonome</h5>
+                  <p class="card-text text-center">Que ce soit pour l'apprentissage de la guitare ou pour continuer mon apprentissage du développement web, je fonctionne de façon autonome avec l'aide d'internet principalement. Internet ouvre de nombreuses portes et offre un accès à toutes formes de culture.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/fallout.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Curieux</h5>
+                  <p class="card-text text-center">J'ai fait des études d'anthropologie parce que je suis curieux depuis tout petit de savoir comment on vit ailleurs. Depuis petit j'ai eu la chance de vivre à l'étranger et d'être confronté à d'autres cultures. Toutes ces expériences et ses souvenirs m'ont apporté une ouverture d'esprit.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <br>
+            <p>&copy; - (>'.')>Christophe<('.'<) - 2020</p>
+        </div>
+    </footer>
+
+    <!--Code JavaScript au passage de la souris sur l'image-->
+    <script>
+        var image=document.querySelector("img.mon-image");
+
+        //Affecte la nouvelle image lorsque la souris survole l'élément
+        function passageDeLaSouris(element) {
+            element.setAttribute('src', 'img/pink.jpg');
+        }
+        //Affecte l'image de départ lorsque la souris ne survole plus l'élément
+        function departDeLaSouris(element) {
+            element.setAttribute('src', 'img/yogi.jpg');
+        }
+
+        mon-image.addEventListener("mouseover", passageDeLaSouris);
+        mon-image.addEventListener("mouseout", departDeLaSouris);
+    </script>   
+    
+</body>
+</html>

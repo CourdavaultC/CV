@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>loisirs</title>
+</head>
+<body>
+    <header>
+        <!--Navigation du site-->
+        <div class="container">
+
+            <a href="cv.html"><img id="mon-image" src="img/yogi.jpg" class="rounded float-left w-25" style="height: 200px;" onmouseover=passageDeLaSouris(this); onmouseout=departDeLaSouris(this); alt="..."></a>
+            
+
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="cv.html">Curriculum Vitae</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Compétences Techniques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="relationship.html">Compétences relationnelles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="language.html">Langues</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loisirs.html">Loisirs</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <br><h2 class="text-center">Mes loisirs:</h2><br>
+        </div>
+        <div class="container">
+
+            <div class="card mb-4" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-3">
+                    <img src="img/birmanie.jpeg" class="img-thumbnail" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Le Voyage</h5>
+                      <p class="card-text">Dès que possible, je m'évade quelques temps pour être confrontés à d'autres culture. C'est un enrichissement personnel et une ouverture sur le monde.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card mb-4" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-3">
+                    <img src="img/guitare.jpg" class="img-thumbnail" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">La guitare</h5>
+                      <p class="card-text">Instrument que je pratique depuis maintenant quelques années. Rock, Blues, Funk et autre, je m'intéresse à toutes sortes de musiques.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card mb-4" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-3">
+                    <img src="img/rugby.jpg" class="img-thumbnail" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Le rugby</h5>
+                      <p class="card-text">J'ai beaucoup joué plus jeune et c'est une parie importante de ma vie. J'y ai appris l'esprit d'équipe et les valeurs de la camaraderie.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>       
+    </main>
+
+    <footer>
+        <div class="container">
+            <br>
+            <p>&copy; - (>'.')>Christophe<('.'<) - 2020</p>
+        </div>
+    </footer>
+
+    <!--Code JavaScript au passage de la souris sur l'image-->
+    <script>
+        var image=document.querySelector("img.mon-image");
+
+        //Affecte la nouvelle image lorsque la souris survole l'élément
+        function passageDeLaSouris(element) {
+            element.setAttribute('src', 'img/pink.jpg');
+        }
+        //Affecte l'image de départ lorsque la souris ne survole plus l'élément
+        function departDeLaSouris(element) {
+            element.setAttribute('src', 'img/yogi.jpg');
+        }
+
+        mon-image.addEventListener("mouseover", passageDeLaSouris);
+        mon-image.addEventListener("mouseout", departDeLaSouris);
+
+        
+    </script>
+</body>
+</html>

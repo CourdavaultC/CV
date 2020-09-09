@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CV</title>
+</head>
+<body>
+    <header>
+        <!--Navigation du site-->
+        <div class="container">
+
+            <a href="cv.html"><img id="mon-image" src="img/yogi.jpg" class="rounded float-left w-25" style="height: 200px;" onmouseover=passageDeLaSouris(this); onmouseout=departDeLaSouris(this); alt="..."></a>
+            
+
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="cv.html">Curriculum Vitae</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Compétences Techniques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="relationship.html">Compétences relationnelles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="language.html">Langues</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loisirs.html">Loisirs</a>
+                </li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <main>
+        <br>
+        <div class="container">
+            <div class="container-left col-4">
+                <div>
+                    <h1>Christophe Courdavault</h1><br>
+    
+                    <h2>33ans</h2>
+                    <h2>Permis B</h2><br>
+                
+                    <h3>36, rue du Moulin</h3>
+                    <h3>78420 - Carrières-sur-Seine</h3>
+                    <h3>Tél : 06 62 45 75 41</h3>
+                </div><br>
+                <div>
+                    <h2><a href="skills.html"><u>Compétences techniques:</u></a></h2>
+    
+                    <h3>HTML5</h3>
+                    <h3>CSS3</h3>
+                    <h3>Bootstrap</h3>
+                    <h3>JavaScript</h3>
+                    <h3>JQuery</h3>
+                    <h3>PHP</h3>
+                    <h3>WordPress</h3>
+                    <h3>Symfony</h3>
+                </div><br>
+                <div>
+                    <h2><a href="relationship.html"><u>Compétences relationnelles:</u></a></h2>
+    
+                    <h3>Motivé et volontaire</h3>
+                    <h3>Capacité d'adaptation</h3>
+                    <h3>Capacité d'écoute</h3>
+                    <h3>Autonome</h3>
+                    <h3>Curieux</h3>
+                </div><br>
+                <div>
+                    <h2><a href="language.html"><u>Langue:</u></a></h2>
+    
+                    <h3>Anglais Niveau C1</h3>
+                </div><br>
+                <div>
+                    <h2><a href="loisirs.html"><u>Centres d'intérêts:</u></a></h2>
+    
+                    <h3>Guitare</h3>
+                    <h3>Voyages</h3>
+                    <h3>Rugby</h3>
+                </div>
+                
+            </div>
+            <div class="container-right col-8">
+                <h1>Développeur Web et Web mobile</h1><br>
+                <div>
+                    <h2>Formations:</h2><br>
+                        <li>De mars à juillet 2020:<br>
+                            Formation développeur Web et Web mobile, Ecole Web Force 3<br>
+                            Développement Front et Back. Respect des tendances actuelles et propreté du code.</li><br>
+                        <li>Licence de sociologie et d’ethnologie, Université Paris X- Nanterre.<br>
+                            2006-2009</li><br>
+                        <li>Baccalauréat Technique STT Gestion Informatique<br>
+                            2005-2006</li><br>
+                </div>
+                
+                <div>
+                    <h2>Expériences professionnelles:</h2><br>
+                        <li>Educateur spécialisé, service d'accueil d'urgence pour mineurs,
+                            association La Montagne Vivra, Cormeilles-en-Parisis, Val d'oise.
+                            Travail en équipe, encadrement et accompagnement. 2017-2019</li><br>
+                        <li>Professeur des écoles, enseignement Montessori pour une classe de
+                            CP, association Plaisir d’Enfance, Paris 19ème . Capacité d'écoute,
+                            suivi et accompagnement de 30 élèves en respectant le niveau de
+                            chacun. 2014</li><br>
+                        <li>Assistant Educateur niveau CP Montessori, association Plaisir
+                            d’Enfance. Apprentissage du métier de professeur des écoles. 2012-
+                            2014</li><br>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <br>
+            <p>&copy; - (>'.')>Christophe<('.'<) - 2020</p>
+        </div>
+    </footer>
+
+    <!--Code JavaScript au passage de la souris sur l'image-->
+    <script>
+        var image=document.querySelector("img.mon-image");
+
+        //Affecte la nouvelle image lorsque la souris survole l'élément
+        function passageDeLaSouris(element) {
+            element.setAttribute('src', 'img/pink.jpg');
+        }
+        //Affecte l'image de départ lorsque la souris ne survole plus l'élément
+        function departDeLaSouris(element) {
+            element.setAttribute('src', 'img/yogi.jpg');
+        }
+
+        mon-image.addEventListener("mouseover", passageDeLaSouris);
+        mon-image.addEventListener("mouseout", departDeLaSouris);
+    </script>    
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Compétences</title>
+</head>
+<body>
+    <header>
+        <!--Navigation du site-->
+        <div class="container">
+
+            <a href="cv.html"><img id="mon-image" src="img/yogi.jpg" class="rounded float-left w-25" style="height: 200px;" onmouseover=passageDeLaSouris(this); onmouseout=departDeLaSouris(this); alt="..."></a>
+            
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="cv.html">Curriculum Vitae</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Compétences Techniques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="relationship.html">Compétences relationnelles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="language.html">Langues</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loisirs.html">Loisirs</a>
+                </li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <main>
+        <div>
+            <br><h1 class="text-center">Mes compétences techniques:</h1><br>
+        </div>
+        
+        <div class="container">
+            
+            <div class="container1 col-6">
+                
+                <div>                   
+                    <img class="img-thumbnail" style="height: 50px;" src="img/html5.png" alt="">                                     
+                    <p>L'école WebForce m'a bien appris à structurer mon code HTML, ne pas hésiter à le commenter, et surtout, de respecter les normes en vigeurs.</p>                    
+                </div>
+                <div>
+                    <img class="img-thumbnail" style="height: 50px;" src="img/CSS3.png" alt="">                                         
+                    <p>Le CSS et la possibilité de donner son propre style à une page html. La possibilité de pouvoir faire des animations m'intéresse particulièrement !</p>
+                </div>
+                <div>
+                    <img class="img-thumbnail" style="height: 50px;" src="img/js.png" alt="">
+                    <p>Le JavaScript est une partie que j'ai beaucoup apprécié. La possibilité de pouvoir créer des interactions et des évènements dynamiques.</p>
+                </div>
+                <div>
+                    <img class="img-thumbnail" style="height: 50px;" src="img/jquery.png" alt="">
+                    <p>jQuery, la bibliothèque JavaScript libre et multiplateforme créée pour faciliter l'écriture de scripts côté client dans le code HTML des pages web.</p>
+                </div>
+                
+            </div>
+
+
+            <div class="container2 col-6">
+                <div>
+                    <img class="img-thumbnail" style="height: 50px;" src="img/php.png" alt="">
+                    <p>PHP et la création/communication avec des bases de données. C'est là que tout prend son sens à ce moment.</p>
+                </div>
+                <div>
+                    <img class="img-thumbnail" style="height: 50px;" src="img/bootstrap.jpg" alt="">
+                    <p>Bootstrap est une collection d'outils utiles à la création du design de sites et d'applications web. C'est un ensemble qui contient des codes HTML et CSS, des formulaires, boutons, outils de navigation et autres éléments interactifs, ainsi que des extensions JavaScript en option.</p>
+                </div>
+                <div>
+                    <img class="img-thumbnail" style="height: 50px;" src="img/Symfony.jpg" alt="">
+                    <p>Symfony est le framework que j'ai le plus utilisé pendant la formation. Je continue aujourd'hui à m'y interêssé, et je suit régulièrement les nouveautés sur le site officiel qui est très bien fait.</p>
+                </div>
+                <div>
+                    <img class="img-thumbnail" style="height: 50px;" src="img/wordpress.jpg" alt="">
+                    <p>Le CMS ou système de gestion de contenu WordPress. Il est très intuitif mais a ses limites lorsque l'on veut traîter beaucoup de données. Plus on y associe de plugin, plus l'affichage du site sera lent. Très opérationnel pour créer des blogs.</p>
+                </div>
+            </div>                       
+        </div>
+        <div>
+            <br><h1 class="text-center">Logiciels de codages:</h1><br>
+        </div>
+        <div class="container">
+            <div class="col-6">
+                <img class="img-thumbnail" style="height: 50px;" src="img/vscode.png" alt="">
+                <p>Je code principalement avec Visual Studio Code qui est un éditeur de code extensible développé par Microsoft pour Windows, Linux et macOS. Les fonctionnalités incluent la prise en charge du débogage, la mise en évidence de la syntaxe, la complétion intelligente du code, les snippets, la refactorisation du code et Git intégré.</p>
+            </div>
+            <div class="col-6">
+                <img class="img-thumbnail" style="height: 50px;" src="img/Phpstorm.png" alt="">
+                <p>Malheureusement payant, PhpStorm est un éditeur pour PHP, HTML, CSS et JavaScript, édité par JetBrains. Il est très intérêssant de l'associer avec Symfony.</p>
+            </div>
+        </div>
+          
+        
+        
+    </main>
+    <footer>
+        <div class="container">
+            <br>
+            <p>&copy; - (>'.')>Christophe<('.'<) - 2020</p>
+        </div>
+    </footer>
+
+    <!--Code JavaScript au passage de la souris sur l'image-->
+    <script>
+        var image=document.querySelector("img.mon-image");
+
+        //Affecte la nouvelle image lorsque la souris survole l'élément
+        function passageDeLaSouris(element) {
+            element.setAttribute('src', 'img/pink.jpg');
+        }
+        //Affecte l'image de départ lorsque la souris ne survole plus l'élément
+        function departDeLaSouris(element) {
+            element.setAttribute('src', 'img/yogi.jpg');
+        }
+
+        mon-image.addEventListener("mouseover", passageDeLaSouris);
+        mon-image.addEventListener("mouseout", departDeLaSouris);
+    </script>    
+</body>
+</html>
